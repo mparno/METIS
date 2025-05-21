@@ -1,5 +1,6 @@
 # Add this directory for internal users.
 include_directories(.)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../include)
 
 # Find sources.
 file(GLOB metis_sources *.c)
