@@ -37,9 +37,10 @@ include(./conf/gkbuild.cmake)
 
 # Add include directories.
 # i.e., the -I equivalent
-include_directories(build/xinclude)
 include_directories(${GKLIB_PATH}/include)
 include_directories(${CMAKE_INSTALL_PREFIX}/include)
+include_directories(${CMAKE_CURRENT_BINARY_DIR})
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # List of paths that the compiler will search for library files.
 # i.e., the -L equivalent
